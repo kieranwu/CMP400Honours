@@ -2,15 +2,15 @@
 	"source": "UE",
 	"applications": [
 		{
-			"app_key": "application.generated.ue.cmp400test-15973114.ue4editor.exe",
+			"app_key": "application.generated.ue.virtual-reality-bp-game-template-15973114.ue4editor.exe",
 			"launch_type": "url",
 			"url": "steam://launch/",
-			"action_manifest_path": "C:/Users/ETC Lab/Documents/Unreal Projects/Kieran Wu Honours/CMP400Honours/Config/SteamVRBindings/steamvr_manifest.json",
+			"action_manifest_path": "D:/abertayschool/GitHub/CMP400Honours/Config/SteamVRBindings/steamvr_manifest.json",
 			"strings":
 			{
 				"en_us":
 				{
-					"name": "CMP400Test-15973114 [UE Editor]"
+					"name": "Virtual Reality BP Game Template-15973114 [UE Editor]"
 				}
 			}
 		}
