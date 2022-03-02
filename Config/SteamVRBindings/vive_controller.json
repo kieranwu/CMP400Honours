@@ -88,7 +88,7 @@
 					{
 						"east":
 						{
-							"output": "/actions/main/in/Button1"
+							"output": "/actions/main/in/Button1L"
 						}
 					}
 				},
@@ -99,7 +99,7 @@
 					{
 						"click":
 						{
-							"output": "/actions/main/in/OpenMenu"
+							"output": "/actions/main/in/OpenMenuL"
 						}
 					}
 				},

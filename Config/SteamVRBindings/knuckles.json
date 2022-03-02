@@ -8,17 +8,6 @@
 		{
 			"sources": [
 				{
-					"mode": "button",
-					"path": "/user/hand/right/input/a",
-					"inputs":
-					{
-						"click":
-						{
-							"output": "/actions/main/in/TeleportRight"
-						}
-					}
-				},
-				{
 					"mode": "dpad",
 					"path": "/user/hand/right/input/thumbstick",
 					"parameters":
@@ -57,17 +46,6 @@
 					}
 				},
 				{
-					"mode": "button",
-					"path": "/user/hand/left/input/a",
-					"inputs":
-					{
-						"click":
-						{
-							"output": "/actions/main/in/TeleportLeft"
-						}
-					}
-				},
-				{
 					"mode": "trigger",
 					"path": "/user/hand/left/input/trigger",
 					"inputs":
@@ -96,7 +74,7 @@
 					{
 						"click":
 						{
-							"output": "/actions/main/in/Button1"
+							"output": "/actions/main/in/Button1L"
 						}
 					}
 				},
@@ -107,7 +85,40 @@
 					{
 						"click":
 						{
-							"output": "/actions/main/in/OpenMenu"
+							"output": "/actions/main/in/OpenMenuL"
+						}
+					}
+				},
+				{
+					"mode": "button",
+					"path": "/user/hand/right/input/a",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/SpellSelectForward_R"
+						}
+					}
+				},
+				{
+					"mode": "button",
+					"path": "/user/hand/left/input/a",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/Button2L"
+						}
+					}
+				},
+				{
+					"mode": "button",
+					"path": "/user/hand/right/input/b",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/SpellSelectBackwards_R"
 						}
 					}
 				},

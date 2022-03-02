@@ -172,11 +172,23 @@
 			"type": "boolean"
 		},
 		{
-			"name": "/actions/main/in/Button1",
+			"name": "/actions/main/in/Button1L",
 			"type": "boolean"
 		},
 		{
-			"name": "/actions/main/in/OpenMenu",
+			"name": "/actions/main/in/OpenMenuL",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/SpellSelectForward_R",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/Button2L",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/SpellSelectBackwards_R",
 			"type": "boolean"
 		},
 		{
@@ -458,8 +470,11 @@
 			"/actions/main/in/GrabRight": "GrabRight",
 			"/actions/main/in/TriggerL": "TriggerL",
 			"/actions/main/in/TriggerR": "TriggerR",
-			"/actions/main/in/Button1": "Button1",
-			"/actions/main/in/OpenMenu": "OpenMenu",
+			"/actions/main/in/Button1L": "Button1L",
+			"/actions/main/in/OpenMenuL": "OpenMenuL",
+			"/actions/main/in/SpellSelectForward_R": "SpellSelectForward_R",
+			"/actions/main/in/Button2L": "Button2L",
+			"/actions/main/in/SpellSelectBackwards_R": "SpellSelectBackwards_R",
 			"/actions/main/in/TeleportDirectionUp axis": "TeleportDirectionUp",
 			"/actions/main/in/TeleportDirectionRight axis": "TeleportDirectionRight",
 			"/actions/main/in/MotionControllerThumbLeft_Y axis": "MotionControllerThumbLeft_Y",
