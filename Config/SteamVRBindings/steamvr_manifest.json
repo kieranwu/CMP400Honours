@@ -192,6 +192,22 @@
 			"type": "boolean"
 		},
 		{
+			"name": "/actions/main/in/TurnLeft",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/TurnRight",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/MoveForward",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/MoveBackward",
+			"type": "boolean"
+		},
+		{
 			"name": "/actions/main/in/TeleportDirectionUp axis",
 			"type": "vector1"
 		},
@@ -475,6 +491,10 @@
 			"/actions/main/in/SpellSelectForward_R": "SpellSelectForward_R",
 			"/actions/main/in/Button2L": "Button2L",
 			"/actions/main/in/SpellSelectBackwards_R": "SpellSelectBackwards_R",
+			"/actions/main/in/TurnLeft": "TurnLeft",
+			"/actions/main/in/TurnRight": "TurnRight",
+			"/actions/main/in/MoveForward": "MoveForward",
+			"/actions/main/in/MoveBackward": "MoveBackward",
 			"/actions/main/in/TeleportDirectionUp axis": "TeleportDirectionUp",
 			"/actions/main/in/TeleportDirectionRight axis": "TeleportDirectionRight",
 			"/actions/main/in/MotionControllerThumbLeft_Y axis": "MotionControllerThumbLeft_Y",
