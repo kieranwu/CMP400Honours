@@ -74,7 +74,7 @@
 					{
 						"click":
 						{
-							"output": "/actions/main/in/Button1L"
+							"output": "/actions/main/in/CreateGestureButton"
 						}
 					}
 				},

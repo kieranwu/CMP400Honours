@@ -156,11 +156,11 @@
 			"type": "boolean"
 		},
 		{
-			"name": "/actions/main/in/GrabLeft",
+			"name": "/actions/main/in/GrabRight",
 			"type": "boolean"
 		},
 		{
-			"name": "/actions/main/in/GrabRight",
+			"name": "/actions/main/in/GrabLeft",
 			"type": "boolean"
 		},
 		{
@@ -172,7 +172,7 @@
 			"type": "boolean"
 		},
 		{
-			"name": "/actions/main/in/Button1L",
+			"name": "/actions/main/in/CreateGestureButton",
 			"type": "boolean"
 		},
 		{
@@ -482,11 +482,11 @@
 			"/actions/main/in/open_console": "Open Console",
 			"/actions/main/in/TeleportRight": "TeleportRight",
 			"/actions/main/in/TeleportLeft": "TeleportLeft",
-			"/actions/main/in/GrabLeft": "GrabLeft",
 			"/actions/main/in/GrabRight": "GrabRight",
+			"/actions/main/in/GrabLeft": "GrabLeft",
 			"/actions/main/in/TriggerL": "TriggerL",
 			"/actions/main/in/TriggerR": "TriggerR",
-			"/actions/main/in/Button1L": "Button1L",
+			"/actions/main/in/CreateGestureButton": "CreateGestureButton",
 			"/actions/main/in/OpenMenuL": "OpenMenuL",
 			"/actions/main/in/SpellSelectForward_R": "SpellSelectForward_R",
 			"/actions/main/in/Button2L": "Button2L",

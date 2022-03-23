@@ -35,17 +35,6 @@
 				},
 				{
 					"mode": "trigger",
-					"path": "/user/hand/left/input/trigger",
-					"inputs":
-					{
-						"click":
-						{
-							"output": "/actions/main/in/GrabLeft"
-						}
-					}
-				},
-				{
-					"mode": "trigger",
 					"path": "/user/hand/right/input/trigger",
 					"inputs":
 					{
@@ -88,7 +77,7 @@
 					{
 						"north":
 						{
-							"output": "/actions/main/in/Button1L"
+							"output": "/actions/main/in/CreateGestureButton"
 						}
 					}
 				},
