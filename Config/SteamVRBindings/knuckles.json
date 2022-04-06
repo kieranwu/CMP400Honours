@@ -107,7 +107,7 @@
 					{
 						"click":
 						{
-							"output": "/actions/main/in/Button2L"
+							"output": "/actions/main/in/StartGestureLeft"
 						}
 					}
 				},

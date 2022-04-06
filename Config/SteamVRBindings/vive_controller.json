@@ -114,7 +114,7 @@
 					{
 						"click":
 						{
-							"output": "/actions/main/in/Button2L"
+							"output": "/actions/main/in/StartGestureLeft"
 						}
 					}
 				},
@@ -201,6 +201,17 @@
 						"click":
 						{
 							"output": "/actions/main/in/ClearSpells"
+						}
+					}
+				},
+				{
+					"mode": "button",
+					"path": "/user/hand/right/input/grip",
+					"inputs":
+					{
+						"click":
+						{
+							"output": "/actions/main/in/StartGestureRight"
 						}
 					}
 				},

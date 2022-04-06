@@ -184,7 +184,7 @@
 			"type": "boolean"
 		},
 		{
-			"name": "/actions/main/in/Button2L",
+			"name": "/actions/main/in/StartGestureLeft",
 			"type": "boolean"
 		},
 		{
@@ -209,6 +209,10 @@
 		},
 		{
 			"name": "/actions/main/in/ClearSpells",
+			"type": "boolean"
+		},
+		{
+			"name": "/actions/main/in/StartGestureRight",
 			"type": "boolean"
 		},
 		{
@@ -493,13 +497,14 @@
 			"/actions/main/in/CreateGestureButton": "CreateGestureButton",
 			"/actions/main/in/OpenMenuL": "OpenMenuL",
 			"/actions/main/in/SpellSelectForward_R": "SpellSelectForward_R",
-			"/actions/main/in/Button2L": "Button2L",
+			"/actions/main/in/StartGestureLeft": "StartGestureLeft",
 			"/actions/main/in/SpellSelectBackwards_R": "SpellSelectBackwards_R",
 			"/actions/main/in/TurnLeft": "TurnLeft",
 			"/actions/main/in/TurnRight": "TurnRight",
 			"/actions/main/in/MoveForward": "MoveForward",
 			"/actions/main/in/MoveBackward": "MoveBackward",
 			"/actions/main/in/ClearSpells": "ClearSpells",
+			"/actions/main/in/StartGestureRight": "StartGestureRight",
 			"/actions/main/in/TeleportDirectionUp axis": "TeleportDirectionUp",
 			"/actions/main/in/TeleportDirectionRight axis": "TeleportDirectionRight",
 			"/actions/main/in/MotionControllerThumbLeft_Y axis": "MotionControllerThumbLeft_Y",
