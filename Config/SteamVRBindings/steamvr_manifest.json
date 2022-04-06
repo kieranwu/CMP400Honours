@@ -216,6 +216,10 @@
 			"type": "boolean"
 		},
 		{
+			"name": "/actions/main/in/OpenMenuRight",
+			"type": "boolean"
+		},
+		{
 			"name": "/actions/main/in/TeleportDirectionUp axis",
 			"type": "vector1"
 		},
@@ -505,6 +509,7 @@
 			"/actions/main/in/MoveBackward": "MoveBackward",
 			"/actions/main/in/ClearSpells": "ClearSpells",
 			"/actions/main/in/StartGestureRight": "StartGestureRight",
+			"/actions/main/in/OpenMenuRight": "OpenMenuRight",
 			"/actions/main/in/TeleportDirectionUp axis": "TeleportDirectionUp",
 			"/actions/main/in/TeleportDirectionRight axis": "TeleportDirectionRight",
 			"/actions/main/in/MotionControllerThumbLeft_Y axis": "MotionControllerThumbLeft_Y",
