@@ -6,6 +6,27 @@
 #include "GameFramework/Pawn.h"
 #include "VRPawnParent.generated.h"
 
+USTRUCT(BlueprintType)
+struct FPreSetSpellGesture
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FTransform> GesturePoints;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString SpellName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool ReleaseCast;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float ChargeSpeed;
+
+};
+
+
+
 UCLASS()
 class CMP400TEST_API AVRPawnParent : public APawn
 {
@@ -25,5 +46,26 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	//
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TArray<FPreSetSpellGesture> PreSetGestureList;
+
+
+
+
+
+
+
+
+	//
+	UFUNCTION(BlueprintCallable)
+		bool CompareDirection(FVector Point1, FVector Point2, FVector PointA, FVector PointB,bool AFlipped, bool BFlipped);
+
+	UFUNCTION(BlueprintCallable)
+		float FindGestureDistance(TArray <FTransform> Points);
+
+	UFUNCTION(BlueprintCallable)
+		bool GestureRecognise(TArray<FTransform>Points,TArray<FTransform>TargetPoints,float &GestureAccuracy);
 
 };
