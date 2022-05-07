@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "MotionControllerComponent.h"
+#include "Camera/CameraComponent.h"
 #include "VRPawnParent.generated.h"
 
 USTRUCT(BlueprintType)
@@ -48,13 +50,41 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	//
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY( BlueprintReadWrite)
 		TArray<FPreSetSpellGesture> PreSetGestureList;
 
+	UPROPERTY( BlueprintReadWrite)
+		TArray<FTransform> LeftGesturePositions;
 
+	UPROPERTY( BlueprintReadWrite)
+		TArray<FTransform> RightGesturePositions;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TArray<FTransform> ExposedGesturePositions;
 
+	UPROPERTY( BlueprintReadWrite)
+		float SampleDistance = 7;
 
+	UPROPERTY( BlueprintReadWrite)
+		bool RecordingLeft;
+
+	UPROPERTY(BlueprintReadWrite)
+		bool RecordingRight;
+
+	UPROPERTY(BlueprintReadWrite)
+		bool StartRecordingLeft;
+
+	UPROPERTY( BlueprintReadWrite)
+		bool StartRecordingRight;
+
+	UPROPERTY( BlueprintReadWrite)
+		bool FindLeft;
+
+	UPROPERTY( BlueprintReadWrite)
+		bool FindRight;
+
+	UPROPERTY( BlueprintReadWrite)
+		float PlayerYaw;
 
 
 
@@ -67,5 +97,23 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 		bool GestureRecognise(TArray<FTransform>Points,TArray<FTransform>TargetPoints,float &GestureAccuracy);
+
+	UFUNCTION(BlueprintCallable)
+		TArray<FTransform> MoveGesturePointsBack(TArray<FTransform>RecordedPoints, float YawRotation);
+
+	UFUNCTION(BlueprintCallable)
+		void RecordGesturePositions(UCameraComponent* CameraClass, UMotionControllerComponent* ControllerClass, bool isLeft, bool GestureFind, TArray<FTransform> RecordingPositions, bool RecordStart, bool SetRecord);
+
+	UFUNCTION(BlueprintCallable)
+		bool BeginGestureRecognise(int &SpellIndex, bool isLeft, TArray<FTransform> RecordedPositions, bool GestureFind);
+
+	UFUNCTION(BlueprintCallable)
+		FVector AdjustToPlayerHeight(FVector Input, bool isLeft, UCameraComponent* CameraClass);
+
+	UFUNCTION(BlueprintCallable)
+		void BeginGestureRecord(bool isLeft, UCameraComponent* CameraClass);
+
+	UFUNCTION(BlueprintCallable)
+		FString EndGestureRecord(bool isLeft, int& SpellIndex);
 
 };
