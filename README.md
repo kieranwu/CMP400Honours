@@ -1,2 +1,2 @@
 # CMP400Honours
-"To what extent can gestures be used to create  interactions in a virtual reality experience?"
+A study on virtual reality gesture input and its effects on immersion in a video game
